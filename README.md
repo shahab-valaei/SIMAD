@@ -17,16 +17,14 @@ Figure 1: The structure of SIMDisasteR and the relationships between model compo
 ## A Sample Application of the Model
 To showcase the capabilities of SIMDisasteR, its application on a virtual testbed, a community called INSURER City, is presented. INSURER is a virtual community that serves as a testbed for the research studies conducted at the Center for Infrastructure Sustainability and Resilience Research (INSURER)[^3], Sharif University of Technology. Figure 2 shows a schematic view of the community and its infrastructure systems.
 
-Figure 2. 
 ![Figure2](https://user-images.githubusercontent.com/61154430/195952654-1dab83a4-cc24-4efa-8a5f-dd284e64c97c.jpg)
-
-
+Figure 2: Schematic view of the INSURER city.
 
 The represented ESFs in this example include search and rescue, public health services, temporary housing, debris removal, security, patient transfer, food and water supply, hospital restoration, infrastructures inspection, and infrastructures restoration. These ESFs and the agencies responsible for performing each of them are shown in Figure 3. Note that each agency can be responsible for one or multiple ESFs. For instance, Urban Development Organization is only responsible for issuing construction permits needed to commence with the repair and reconstruction activities. On the other hand, the Search and Rescue Organization is responsible for search and rescue operations, health services, and temporary housing.
 
 ![Figure3](https://user-images.githubusercontent.com/61154430/195952667-b51d86d9-65c4-45e3-869e-d468d9c12e13.png)
+Figure 3: Emergency Support Functions in post-disaster response and recovery of the community and the agencies responsible for each function.
 
-Figure 3. 
 The model is capable of generating a wide range of outputs corresponding to various emergency support functions and dynamic phenomena. 
 As an example of model outputs, the following sub-sections present the progress of multiple ESFs (search and rescue, damage inspection and restoration of infrastructure systems) under different simulation scenarios. The base scenario corresponds to the situation where all of the identified agencies cooperate. In each of the other scenarios, one or multiple of the agencies are incapacitated, meaning that its operational crews are not present in the region, and its manager is not functional to cooperate with other manager agents.
 
@@ -34,22 +32,19 @@ As an example of model outputs, the following sub-sections present the progress 
 Figure 4 shows the progress of the search and rescue operation as a function of time. It shows the percentage of operation that is completed at a given time.
 
 ![Figure4](https://user-images.githubusercontent.com/61154430/195952690-8de7c6e8-af4e-45e5-b45e-4a271638f317.png)
-
-Figure 4.
+Figure 4: Status of search and rescue operations when a key agency is incapacitated.
 
 ### Damage Inspection of Infrastructure Systems
 Figure 5 shows the overall progress of damage inspection operations across all community infrastructure systems and lifelines under various scenarios.
 
 ![Figure5](https://user-images.githubusercontent.com/61154430/195952710-97547a9e-f386-419a-a3da-3e2942f606e4.png)
-
-Figure 5.
+Figure 5: Overall status of damage inspection of community infrastructure systems and lifelines.
 
 ### Restoration of Infrastructure Systems
 The overall restoration curve for the community infrastructure systems in various simulation scenarios is provided in Figure 6.
 
 ![Picture6](https://user-images.githubusercontent.com/61154430/195952723-bf207b3b-44d8-48c1-ae61-13ce2d894ab4.png)
-
-Figure 6.
+Figure 6. Overall status of restoration of community infrastructure systems and lifelines.
 
 [^3]: https://insurer.sharif.edu/
 
