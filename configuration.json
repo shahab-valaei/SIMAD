@@ -1,0 +1,2326 @@
+{
+  "SimulationModelScenarioManager1": {
+    "type": "abm",
+    "name": "Simulation Model",
+    "model" : "simulation_models.abm.main.simulation_model",
+    "base_constants": {
+    "crimePerHourPerCrew": 1.0
+    },
+    "scenarios": {
+      "base": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 83
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 45
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 56
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 40
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 43
+         }
+        ]
+      },
+        "No_DoD": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 0
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 45
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 56
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 40
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 43
+         }
+        ]
+      },
+        "No_FEMA": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 83
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 45
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 0
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 40
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 43
+         }
+        ]
+      },
+        "No_DoH": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 83
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 45
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 56
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 40
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 0
+         }
+        ]
+      },
+        "No_ARC": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 83
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 0
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 56
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 40
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 43
+         }
+        ]
+      },
+        "No_EPA": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 83
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 0
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 45
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 56
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 40
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 43
+         }
+        ]
+      },
+        "No_DoE": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 83
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 0
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 45
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 56
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 40
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 43
+         }
+        ]
+      },
+        "No_Cyb": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 83
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 0
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 45
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 56
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 40
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 43
+         }
+        ]
+      },
+        "No_DoT": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 0
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 83
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 45
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 56
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 40
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 43
+         }
+        ]
+      },
+        "No_DHS": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 83
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 45
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 56
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 0
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 43
+         }
+        ]
+      },
+        "No_NVOAD": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.06
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 83
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 45
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 56
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 0
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 40
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 43
+         }
+        ]
+      },
+        "No_Recovery": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.02
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 0
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 30
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 0
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 0
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 0
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 30
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 27
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 25
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 0
+         }
+        ]
+      },
+        "No_SD": {
+        "runspecs": {
+          "starttime": 0,
+          "stoptime": 300,
+          "dt": 0.1
+        },
+        "properties": {
+          "sd_submodel":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "life_expectancy":
+          {
+            "type": "Integer",
+            "value": 1
+          },
+          "healthPersonDay":
+          {
+            "type": "Double",
+            "value": 2.0
+          },
+          "foodPersonDay":
+          {
+            "type": "Double",
+            "value": 3.0
+          },
+          "crimeMaxLimit":
+          {
+            "type": "Double",
+            "value": 50.0
+          },
+          "contactFreq":
+          {
+            "type": "Double",
+            "value": 10.0
+          },
+          "diseaseDeathPercentage":
+          {
+            "type": "Double",
+            "value": 0.1
+          },
+          "infectivityInitial":
+          {
+            "type": "Double",
+            "value": 0.04
+          },
+          "crimePerDayPerCrew":
+          {
+            "type": "Double",
+            "value": 5.0
+          },
+          "foodPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 100.0
+          },
+          "healthPerCrewPerDay":
+          {
+            "type": "Double",
+            "value": 80.0
+          }
+        },
+        "agents": [
+         {
+            "name": "DataCollector",
+            "count": 1
+         },
+         {
+            "name": "DataCollectorSD",
+            "count": 1
+         },
+         {
+            "name": "disaster",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportation",
+            "count": 1
+         },
+            {
+            "name": "DepOfTransportationCrew",
+            "count": 10
+         },
+            {
+            "name": "DepOfDefense",
+            "count": 1
+         },
+            {
+            "name": "DepOfDefenseCrew",
+            "count": 30
+         },
+            {
+            "name": "OfficeOfCybersecurity",
+            "count": 1
+         },
+            {
+            "name": "OfficeOfCybersecurityCrew",
+            "count": 10
+         },
+            {
+            "name": "EPA",
+            "count": 1
+         },
+            {
+            "name": "EPACrew",
+            "count": 14
+         },
+            {
+            "name": "DepOfEnergy",
+            "count": 1
+         },
+            {
+            "name": "DepOfEnergyCrew",
+            "count": 21
+         },
+            {
+            "name": "AmericanRedCross",
+            "count": 1
+         },
+            {
+            "name": "AmericanRedCrossCrew",
+            "count": 30
+         },
+            {
+            "name": "Ambulance",
+            "count": 25
+         },
+            {
+            "name": "FEMA",
+            "count": 1
+         },
+            {
+            "name": "FEMACrew",
+            "count": 27
+         },
+            {
+            "name": "NVOAD",
+            "count": 1
+         },
+            {
+            "name": "NVOADCrew",
+            "count": 10
+         },
+            {
+            "name": "Household",
+            "count": 908
+         },
+            {
+            "name": "ConstructionCompany",
+            "count": 1
+         },
+            {
+            "name": "InsuranceCompany",
+            "count": 1
+         },
+            {
+            "name": "UrbanDevelopment",
+            "count": 1
+         },
+            {
+            "name": "DHS",
+            "count": 1
+         },
+            {
+            "name": "DHSCrew",
+            "count": 25
+         },
+            {
+            "name": "DepOfHealth",
+            "count": 1
+         },
+            {
+            "name": "DepOfHealthCrew",
+            "count": 15
+         }
+        ]
+      }
+    }
+  }
+}
