@@ -15,8 +15,13 @@ SIMDisasteR comprises three main blocks. A high-level schematic view of blocks, 
 
 ## A Sample Application of the Model
 To showcase the capabilities of SIMDisasteR, its application on a virtual testbed, a community called INSURER City, is presented. INSURER is a virtual community that serves as a testbed for the research studies conducted at the Center for Infrastructure Sustainability and Resilience Research (INSURER)[^3], Sharif University of Technology. Figure 2 shows a schematic view of the community and its infrastructure systems.
+Figure 2. 
+The represented ESFs in this example include search and rescue, public health services, temporary housing, debris removal, security, patient transfer, food and water supply, hospital restoration, infrastructures inspection, and infrastructures restoration. These ESFs and the agencies responsible for performing each of them are shown in Figure 3. Note that each agency can be responsible for one or multiple ESFs. For instance, Urban Development Organization is only responsible for issuing construction permits needed to commence with the repair and reconstruction activities. On the other hand, the Search and Rescue Organization is responsible for search and rescue operations, health services, and temporary housing.
+Figure 3. 
 
 
+
+Fig. 30 shows the overall progress of damage inspection operations across all community infrastructure systems and lifelines under various scenarios. As evident, the failure of the Public Security Agency to participate in the inspection and recovery of several critical infrastructure systems (e.g., telecommunication networks or oil and gas pipelines) hinders the completion of the said activities. In such cases, other agencies can compensate for the Public Security Agency absence. However, overall, the inspection process will progress at a slower pace.
 
 
 
