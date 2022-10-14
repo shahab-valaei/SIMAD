@@ -34,7 +34,7 @@ As an example of model outputs, the following sub-sections present the progress 
 ### Search and Rescue
 Figure 4 shows the progress of the search and rescue operation as a function of time. It shows the percentage of operation that is completed at a given time.
 
-![Figure4](https://user-images.githubusercontent.com/61154430/195952690-8de7c6e8-af4e-45e5-b45e-4a271638f317.png)
+![sar1](https://user-images.githubusercontent.com/61154430/195953802-4db4ccf3-c7bb-4d64-b8bb-a2f220c8ee58.png)
 
 Figure 4: Status of search and rescue operations when a key agency is incapacitated.
 
@@ -42,13 +42,14 @@ Figure 4: Status of search and rescue operations when a key agency is incapacita
 
 Figure 5 shows the overall progress of damage inspection operations across all community infrastructure systems and lifelines under various scenarios.
 
-![Figure5](https://user-images.githubusercontent.com/61154430/195952710-97547a9e-f386-419a-a3da-3e2942f606e4.png)
+![ins7](https://user-images.githubusercontent.com/61154430/195953818-45357061-9a2c-43b2-8fdb-04d338904434.png)
+
 Figure 5: Overall status of damage inspection of community infrastructure systems and lifelines.
 
 ### Restoration of Infrastructure Systems
 The overall restoration curve for the community infrastructure systems in various simulation scenarios is provided in Figure 6.
 
-![Picture6](https://user-images.githubusercontent.com/61154430/195952723-bf207b3b-44d8-48c1-ae61-13ce2d894ab4.png)
+![res7](https://user-images.githubusercontent.com/61154430/195953786-513861cc-5d7d-4a37-9afd-4f7afce2bcdd.png)
 
 Figure 6. Overall status of restoration of community infrastructure systems and lifelines.
 
