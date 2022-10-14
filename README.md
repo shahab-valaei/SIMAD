@@ -11,7 +11,8 @@ The model is implemented in Python Programming Language. BPTK-Py[^2] is used as 
 ## Model Structure
 SIMDisasteR comprises three main blocks. A high-level schematic view of blocks, their characteristics, and their relationships are shown in Figure 1, below. The first block, the simulation environment, provides a shared interactive setting for the operation and collaboration of organizations and includes the community infrastructure systems and lifelines at a coarse resolution. The second block, the Agent-Based Modeling (ABM) sub-model, simulates the intra- and inter-agency interactions among the entities responsible for disaster response and recovery. The third block, the System Dynamics (SD) sub-model, simulates the dynamics of the events in the aftermath of an earthquake, including provision of essentials, infectious diseases outbreak, and crime outbreak and prevention. These blocks work harmoniously to characterize the post-disaster state of the community and the progress of operations aimed to restore it to the pre-disaster level. The proposed model considers the performance of agencies and the coordination among them in delivering ESFs to characterize the status of various ESFs as a function of time.
 
-![Figure1](https://user-images.githubusercontent.com/61154430/195952494-a840e0b2-fb5f-4a33-806d-2c13cd9cf033.png)
+
+![rsz_2figure1](https://user-images.githubusercontent.com/61154430/195952566-a7d76291-9c5a-41df-8a3d-fb298eacf84b.png)
 
 
 ## A Sample Application of the Model
