@@ -9,7 +9,7 @@ The model is implemented in Python using <a href="https://github.com/transentis/
 ## Citation and academic literature
 To cite this tool and for a complete description of the UrbanAccess methodology see the paper below:
 
-<a href=”https://authors.elsevier.com/c/1glYR3OQ~fdUa1”>Valaei Sharif, S., Habibi Moshfegh, P., & Kashani, H. (2023). Simulation Modeling of Operation and Coordination of Agencies Involved in Post-disaster Response and Recovery. Reliability Engineering & System Safety, 109219.</a>
+<a href=”https://authors.elsevier.com/c/1glYR3OQ~fdUa1” target="_blank" title="Visit Example website">Valaei Sharif, S., Habibi Moshfegh, P., & Kashani, H. (2023). Simulation Modeling of Operation and Coordination of Agencies Involved in Post-disaster Response and Recovery. Reliability Engineering & System Safety, 109219.</a>
 
 
 ## Disclaimer
