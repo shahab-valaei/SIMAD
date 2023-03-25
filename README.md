@@ -7,7 +7,7 @@ The model is implemented in Python using <a href="https://github.com/transentis/
 [^1]: Emergency Support Functions (ESFs) are defined as the primary coordinating structures used by governments to respond to the incidents and natural hazards.
 
 ## Citation and academic literature
-To cite this tool and for a complete description of the UrbanAccess methodology see the paper below:
+For a complete description of the SIMDisasteR methodology see the paper below:
 
 [Valaei Sharif, S., Habibi Moshfegh, P., & Kashani, H. (2023). Simulation Modeling of Operation and Coordination of Agencies Involved in Post-disaster Response and Recovery. _Reliability Engineering & System Safety_, 109219.](https://authors.elsevier.com/c/1glYR3OQ~fdUa1)
 
