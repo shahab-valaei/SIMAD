@@ -11,7 +11,7 @@ To cite this tool and for a complete description of the UrbanAccess methodology 
 
 [Valaei Sharif, S., Habibi Moshfegh, P., & Kashani, H. (2023). Simulation Modeling of Operation and Coordination of Agencies Involved in Post-disaster Response and Recovery. Reliability Engineering & System Safety, 109219.]([https://www.google.com/](https://authors.elsevier.com/c/1glYR3OQ~fdUa1)){:target="_blank" title="Visit Article"}
 
-[Go to Google](https://www.google.com/){:target="_blank" title="Visit Google"}
+[Go to Google](https://www.google.com/)
 
 
 ## Disclaimer
