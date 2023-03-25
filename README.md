@@ -2,7 +2,7 @@
 ## Overview
 SIMDisasteR is a hybrid Simulation Modelling framework for operation and coordination of Agencies Involved Disaster response and recovery. The model uses Agent-Based Modeling (ABM) and System Dynamics (SD) modeling techniques to facilitate modeling the post-disaster response and recovery of the community and the involved entities, including the primary Emergency Support Functions (ESFs)[^1] be delivered to the population, the leading agencies involved in providing those ESFs, and the consequent macro level effects such as the state of health, housing, and security in the aftermath of a disaster.
 
-The model is implemented in Python using <a href="[https://www.example.com](https://github.com/transentis/bptk_py_tutorial)" target="_blank" title="Visit Example website">BPTK-Py</a>, a platform for haybrid modeling using Agent-based Modeling and System Dynamics.
+The model is implemented in Python using <a href="https://github.com/transentis/bptk_py_tutorial" target="_blank" title="Visit Example website">BPTK-Py</a>, a platform for haybrid modeling using Agent-based Modeling and System Dynamics.
 
 [^1]: Emergency Support Functions (ESFs) are defined as the primary coordinating structures used by governments to respond to the incidents and natural hazards.
 
